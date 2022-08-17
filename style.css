@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: roboto, sans-serif;
+}
+
+.container {
+  background: url(images/1.jpg) center no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 50%;
+  border-radius: 7px;
+  padding: 2rem;
+  box-shadow: 3px 3px 5px lightgray;
+  position: relative;
+}
+
+.q {
+  display: none;
+}
+
+.q.active {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  font-family: "roboto slab", sans-serif;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  font-size: 1rem;
+  color: #111;
+}
+
+.answers div {
+  margin: 0.5rem;
+}
+
+.radio {
+  margin-right: 0.3rem;
+}
+
+#btn {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+#btn:hover {
+  background-color: rgb(255, 181, 44);
+}
+
+.score {
+  display: none;
+}
+
+.score.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.score p {
+  font-size: 1.3rem;
+}
+
+.score span {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}

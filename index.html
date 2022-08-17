@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CowBoy Bebop Trivia Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="active q q1">
+          <h2 class="question">
+            Which martial arts style does Spike practice?
+          </h2>
+          <div class="answers">
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Mixed Martial Arts</label>
+            </div>
+            <div>
+              <input type="radio" class="radio correct" name="answer-box" />
+              <label>Jit Kun Do</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Tae Kwon Do</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Kung fu</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="q q2">
+          <h2 class="question">What's the name of the opening credits song?</h2>
+          <div class="answers">
+            <div>
+              <input type="radio" class="radio correct" name="answer-box" />
+              <label>Tank!</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Real folk blues</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Hard luck woman</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Sympathy for the devil</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="q q3">
+          <h2 class="question">How old is Spike?</h2>
+          <div class="answers">
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>29</label>
+            </div>
+            <div>
+              <input type="radio" class="radio correct" name="answer-box" />
+              <label>27</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>25</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>23</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="q q4">
+          <h2 class="question">Which episode marks Vicious's debute?</h2>
+          <div class="answers">
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Jupiter Jazz</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Gateway shuffle</label>
+            </div>
+            <div>
+              <input type="radio" class="radio correct" name="answer-box" />
+              <label>Ballad of fallen angels</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Bohemian rhapsody</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="q q5">
+          <h2 class="question">What's the last spoken line in the show?</h2>
+          <div class="answers">
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>You're gonna carry that weight.</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>See you space cowboy...</label>
+            </div>
+            <div>
+              <input type="radio" class="radio correct" name="answer-box" />
+              <label>BANG.</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>See you space cowgirl, someday, somewhere!</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="q q6">
+          <h2 class="question">
+            Which one is NOT something that spike particularly hates?
+          </h2>
+          <div class="answers">
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Kids</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Animals</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Women with attitudes</label>
+            </div>
+            <div>
+              <input type="radio" class="radio correct" name="answer-box" />
+              <label>Beef and bell pepper</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="q q7">
+          <h2 class="question">
+            Who says this line? <br />
+            "Instead of being alone in a group, it's better to have real
+            solitude all by yourself."
+          </h2>
+          <div class="answers">
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Jet</label>
+            </div>
+            <div>
+              <input type="radio" class="radio correct" name="answer-box" />
+              <label>Faye</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Spike</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="answer-box" />
+              <label>Julia</label>
+            </div>
+          </div>
+        </div>
+        <div class="q score">
+          <p>Your got <span id="scoreNum"></span> correct answers!</p>
+        </div>
+        <button id="btn">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
